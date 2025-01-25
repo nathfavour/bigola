@@ -1,7 +1,7 @@
 import time
 import matplotlib.pyplot as plt
 
-# first steps 
+# using the for loop method
 def square_loop(n):
     """Return a list of the first n square numbers using a loop."""
     square_nums = []
@@ -9,11 +9,11 @@ def square_loop(n):
         square_nums.append(i**2)
     return square_nums
 
-
+# using the list comprehension method
 def square_comprehension(n):
     """Return a list of the first n square numbers using a list comprehension."""
     return [i**2 for i in range(n)]
-
+    
 
 def measure_runtimes(sizes):
     """Measure runtimes of both functions for a range of sizes."""
